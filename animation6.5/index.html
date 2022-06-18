@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" href="./icon.svg">
+<!--  尝试用js实现animation6中的效果-->
+  <style>
+    .colorBlock {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="colorBlock"></div>
+  <div class="colorBlock"></div>
+  <div class="colorBlock"></div>
+  <script>
+    let dColorBolocks = document.getElementsByClassName('colorBlock');
+    let i = 0;
+    let colos = ['red','orange','green'];
+    setInterval(function (){
+      if(i>=1){
+        dColorBolocks[i-1].style.backgroundColor = 'white';
+      }else {
+        dColorBolocks[2].style.backgroundColor = 'white';
+      }
+      dColorBolocks[i].style.backgroundColor = colos[i];
+      if(i===2){
+        i=0;
+      }else {
+        i++;
+      }
+    },1000)
+  </script>
+</body>
+</html>

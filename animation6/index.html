@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" href="./icon.svg">
+  <style>
+    .colorBlock {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .colorBlock1 {
+      animation: change1 5s linear;
+    }
+    @keyframes change1 {
+      0% {
+        background-color: red;
+      }
+      14% {
+        background-color: red;
+      }
+      15% {
+        background-color: white;
+      }
+    }
+    .colorBlock2 {
+      animation: change2 7s linear;
+    }
+    @keyframes change2 {
+      0% {
+        background-color: white;
+      }
+      14% {
+        background-color: white;
+      }
+      15% {
+        background-color: orange;
+      }
+      28% {
+        background-color: orange;
+      }
+      29% {
+        background-color: white;
+      }
+    }
+    .colorBlock3 {
+      animation: change3 7s linear;
+    }
+    @keyframes change3 {
+      0% {
+        background-color: white;
+      }
+      29% {
+        background-color: white;
+      }
+      30% {
+        background-color: green;
+      }
+      42% {
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="colorBlock colorBlock1"></div>
+  <div class="colorBlock colorBlock2"></div>
+  <div class="colorBlock colorBlock3"></div>
+</body>
+</html>
